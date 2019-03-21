@@ -14,18 +14,19 @@ body {
 
 .custom-calendar-full {
 	position: absolute;
-	top: 24px;
+	top: 10px;
 	bottom: 0px;
 	left: 0px;
 	width: 100%;
-	height: auto;
+	height: 60%;
+	
 }
 
 .fc-calendar-container {
 	height: auto;
-	bottom: 0px;
+	bottom: 20px;
 	width: 100%;
-	top: 50px;
+	top: 60px;
 	position: absolute;
 }
 

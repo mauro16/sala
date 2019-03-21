@@ -1,9 +1,8 @@
 @import url('demo.css');
-.container{
-	background-color: aqua;
-	width: 50%;
-	height: 50%;
+.custom-calendar-wrap{
+	background-color: rgb(7, 37, 37);
 }
+
 
 @font-face {
   font-family: 'fontawesome-selected';

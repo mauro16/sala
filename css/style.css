@@ -277,11 +277,11 @@
 	height: 100%;
         }
         #esquerda{
-            top:-280px;
+            top:-250px;
             width: 100%;
             background-color: rgb(7, 37, 37);
         }
-        
+
          .delete{
             float: right;
         }

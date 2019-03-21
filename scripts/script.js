@@ -51,7 +51,7 @@ $(document).ready(function () {
             $year.html(cal.getYear());
         }
 
-        // you can also add more data later on. As an example:
+        // we can also add more data later on. As an example:
         /*
         someElement.on( 'click', function() {
         	
@@ -65,6 +65,8 @@ $(document).ready(function () {
  
         } );
         */
+       
+
 
     });
 });

@@ -2,174 +2,287 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Raum 04</title>
-    <link rel="stylesheet" href="css/calendar.css">
-    <link rel="stylesheet" href="css/custom_1.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-    <script src="jquery.calendar.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="jquery.calendar.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="scripts/data.js"></script>
-    <script src="scripts/jquery.calendario.js"></script>
-    <script src="scripts/modernizr.custom.63321.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="scripts/script.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Raum 04</title>
+        <link rel="stylesheet" href="css/calendar.css">
+        <link rel="stylesheet" href="css/custom_1.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous">
+                </script>
+        <script src="jquery.calendar.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="jquery.calendar.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="scripts/data.js"></script>
+        <script src="scripts/jquery.calendario.js"></script>
+        <script src="scripts/modernizr.custom.63321.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="scripts/script.js"></script>
 </head>
 
 <body>
 
-    <div class="container">
-        <!--/ Codrops top bar -->
-        <div class="custom-calendar-wrap custom-calendar-full">
-            <div class="custom-header clearfix">
-                <h3 class="custom-month-year">
-                    <span id="custom-month" class="custom-month"></span>
-                    <span id="custom-year" class="custom-year"></span>
-                    <nav>
-                        <span id="custom-prev" class="custom-prev"></span>
-                        <span id="custom-next" class="custom-next"></span>
-                        <span id="custom-current" class="custom-current" title="Got to current date"></span>
-                    </nav>
-                </h3>
-            </div>
-            <div id="calendar" class="fc-calendar-container"></div>
-        </div>
-
-    </div>
-    <!-- /container -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 bg-success" id="esquerda">
-                <div class="list-group">
-
-                    <span class="list-group-item list-group-item-action"> 07:30 bis 08:15
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;<span>&#xe876;</span></i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-success"> 08:15 bis 09:00
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-secondary"> 09:15 bis 10:00
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-info"> 10:00 bis 10:45
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-warning"> 11:00 bis 11:45
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-danger"> 11:45 bis 12:30
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-primary"> 13:00 bis 13:45
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-dark"> 13:45 bis 14:45
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-light"> 14:45 bis 15:30
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-light"> 15:30 bis 16:15
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-light"> 16:30 bis 17:15
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-light"> 17:15 bis 18:00
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-light"> 18:15 bis 19:00
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-light"> 19:00 bis 19:45
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-light"> 20:00 bis 20:45
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
-                    <span class="list-group-item list-group-item-action list-group-item-light"> 20:45 bis 21:30
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-                                data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                    </span>
-
+        <div class="container">
+                <!--/ Codrops top bar -->
+                <div class="custom-calendar-wrap custom-calendar-full">
+                        <div class="custom-header clearfix">
+                                <h3 class="custom-month-year">
+                                        <span id="custom-month" class="custom-month"></span>
+                                        <span id="custom-year" class="custom-year"></span>
+                                        <nav>
+                                                <span id="custom-prev" class="custom-prev"></span>
+                                                <span id="custom-next" class="custom-next"></span>
+                                                <span id="custom-current" class="custom-current"
+                                                        title="Got to current date"></span>
+                                        </nav>
+                                </h3>
+                        </div>
+                        <div id="calendar" class="fc-calendar-container"></div>
                 </div>
-            </div>
+
         </div>
-    </div>
+        <!-- /container -->
+
+        <div class="container">
+                <div class="row">
+                        <div class="col-sm-6 bg-success" id="esquerda">
+                                <div class="list-group">
+
+                                        <span class="list-group-item list-group-item-action"><img id="myImage"
+                                                        src="./images/face.png"> 07:30 bis 08:15
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-success"><img
+                                                        id="myImage" src="./images/face.png">
+                                                08:15 bis 09:00
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                                        id="myImage" src="./images/face.png">
+                                                09:15 bis 10:00
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-info"><img
+                                                        id="myImage" src="./images/face.png"> 10:00
+                                                bis 10:45
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-warning"><img
+                                                        id="myImage" src="./images/face.png">
+                                                11:00 bis 11:45
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-danger"><img
+                                                        id="myImage" src="./images/face.png">
+                                                11:45 bis 12:30
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-primary"><img
+                                                        id="myImage" src="./images/face.png">
+                                                13:00 bis 13:45
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-dark"><img
+                                                        id="myImage" src="./images/face.png"> 13:45
+                                                bis 14:45
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                                        id="myImage" src="./images/face.png">
+                                                14:45 bis 15:30
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                                        id="myImage" src="./images/face.png">
+                                                15:30 bis 16:15
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                                        id="myImage" src="./images/face.png">
+                                                16:30 bis 17:15
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                                        id="myImage" src="./images/face.png">
+                                                17:15 bis 18:00
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                                        id="myImage" src="./images/face.png">
+                                                18:15 bis 19:00
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                                        id="myImage" src="./images/face.png">
+                                                19:00 bis 19:45
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                                        id="myImage" src="./images/face.png">
+                                                20:00 bis 20:45
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                                        id="myImage" src="./images/face.png">
+                                                20:45 bis 21:30
+                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Delete">&#xE872;</i></a>
+                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Edit">&#xE254;</i></a>
+                                                <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
+                                                                class="material-icons" data-toggle="tooltip"
+                                                                title="Add">&#xe614;</i></a>
+                                        </span>
+
+                                </div>
+                        </div>
+                </div>
+        </div>
 
 
 </body>

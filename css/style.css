@@ -287,5 +287,10 @@
         }
         .edit{
             float: right;
+            margin-right: 15px;
+        }
+        .add{
+            float: right;
+            margin-right: 15px;
         }
        

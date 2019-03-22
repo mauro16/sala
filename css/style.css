@@ -284,13 +284,42 @@
 
          .delete{
             float: right;
+           
         }
         .edit{
             float: right;
             margin-right: 15px;
+            
         }
         .add{
             float: right;
             margin-right: 15px;
+            
+        }
+
+        #infor{
+            
+            margin-bottom: 5px;
+        }
+
+        .controls{    
+          display: flex;
+        justify-content: center;  
+        }
+        #nome{
+            margin-top: 0px;
+            text-align: center;  
+            color: rgb(3, 3, 3);
+            font-size: 15px;        
+        }
+          #email{
+  display: flex;
+              text-align: center; 
+              color: rgb(150, 148, 144);   
+              font-size: 10px;        
+        }
+          #data{
+     
+              text-align: center;            
         }
        

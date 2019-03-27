@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Raum 04</title>
+        <link href="css/multiselect.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/calendar.css">
         <link rel="stylesheet" href="css/custom_1.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
@@ -17,6 +18,7 @@
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                 crossorigin="anonymous">
                 </script>
+        <script src="scripts/multiselect.min.js"></script>
         <script src="jquery.calendar.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <link rel="stylesheet" href="jquery.calendar.css">
@@ -70,15 +72,27 @@
                                                 </div>
                                                 <div class="form-group">
                                                         <label>Date</label>
-                                                        <input type="date" class="form-control" readonly required>
+                                                        <input type="date" id="idDataModel" class="form-control"
+                                                                readonly required>
                                                 </div>
+                                                <select id='testSelect1' multiple>
+                                                        <option value='1'>Item 1</option>
+                                                        <option value='2'>Item 2</option>
+                                                        <option value='3'>Item 3</option>
+                                                        <option value='4'>Item 4</option>
+                                                        <option value='5'>Item 5</option>
+                                                </select>
+
+                                                <script>
+                                                        document.multiselect('#testSelect1');
+                                                </script>
                                                 <div class="form-group">
                                                         <label>Name</label>
                                                         <input type="text" class="form-control" required>
                                                 </div>
                                                 <div class="form-group">
                                                         <label>Email</label>
-                                                        <input type="email" class="form-control" required>
+                                                        <input type="email" id="idEmail" class="form-control" required>
                                                 </div>
                                         </div>
                                         <div class="modal-footer">
@@ -149,7 +163,8 @@
                         <div class="col-sm-6 bg-success" id="esquerda">
                                 <div class="list-group">
 
-                                        <span id="infor" class="list-group-item list-group-item-action"><img
+                                        <span id="primHor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png"> 07:30 bis 08:15
 
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -162,13 +177,15 @@
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
 
-                                                <p class="controls" id="nome">Mauro Sergio Rodrigues</p>
-                                                <p class="controls" id="email">mauro@gmail.com</p>
-                                                <p class="controls" id="data">22/03/2019</p>
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
 
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-success"><img
+                                        <span id="segHor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png">
                                                 08:15 bis 09:00
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -180,9 +197,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                        <span id="terHor"
+                                                class="list-group-item list-group-item-action list-group-item-secondary"><img
                                                         id="myImage" src="./images/face.png">
                                                 09:15 bis 10:00
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -194,9 +217,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-info"><img
+                                        <span id="quaHor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png"> 10:00
                                                 bis 10:45
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -208,9 +237,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-warning"><img
+                                        <span id="quiHor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png">
                                                 11:00 bis 11:45
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -222,9 +257,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-danger"><img
+                                        <span id="sextHor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png">
                                                 11:45 bis 12:30
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -236,9 +277,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-primary"><img
+                                        <span id="setHor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png">
                                                 13:00 bis 13:45
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -250,9 +297,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-dark"><img
+                                        <span id="oitHor"
+                                                class="list-group-item list-group-item-action list-group-item-dark"><img
                                                         id="myImage" src="./images/face.png"> 13:45
                                                 bis 14:45
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -264,9 +317,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                        <span id="nonHor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png">
                                                 14:45 bis 15:30
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -278,9 +337,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                        <span id="decHor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png">
                                                 15:30 bis 16:15
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -292,9 +357,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                        <span id="desPrihor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png">
                                                 16:30 bis 17:15
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -306,9 +377,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                        <span id="desSeghor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png">
                                                 17:15 bis 18:00
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -320,9 +397,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                        <span id="desTerhor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png">
                                                 18:15 bis 19:00
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -334,9 +417,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                        <span id="desQuhor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png"> 19:00 bis 19:45
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
@@ -347,9 +436,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                        <span id="desQuhor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png">
                                                 20:00 bis 20:45
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -361,9 +456,15 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
-                                        <span class="list-group-item list-group-item-action list-group-item-light"><img
+                                        <span id="desSexhor"
+                                                class="list-group-item list-group-item-action list-group-item-info"><img
                                                         id="myImage" src="./images/face.png">
                                                 20:45 bis 21:30
                                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
@@ -375,13 +476,18 @@
                                                 <a href="#addEmployeeModal" class="add" data-toggle="modal"><i
                                                                 class="material-icons" data-toggle="tooltip"
                                                                 title="Add">&#xe614;</i></a>
+
+                                                <p class="controls" id="nome">{{nome cadastrado}}</p>
+                                                <p class="controls" id="email">{{email cadastrado}}</p>
+                                                <p class="controls" id="data">{{pagar a data ao clicar no calendario}}
+                                                </p>
                                         </span>
 
                                 </div>
                         </div>
                 </div>
         </div>
-
+        <script src="scripts/multiselect.js"></script>
 
 </body>
 

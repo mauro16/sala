@@ -22,12 +22,14 @@ $(document).ready(function () {
         }
     });
     $(function () {
-
+        var data = document.getElementById("data")
         var cal = $('#calendar').calendario({
             onDayClick: function ($el, $contentEl, dateProperties) {
 
                 for (var key in dateProperties) {
                     console.log(key + ' = ' + dateProperties[key]);
+                    var dados = key + ' = ' + dateProperties[key];
+                    alert(dados);
                 }
 
             },
@@ -65,10 +67,12 @@ $(document).ready(function () {
  
         } );
         */
-       
+
 
 
     });
 });
+
+
 
 
